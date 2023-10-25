@@ -31,9 +31,21 @@
             - Extraction des données (semaines ou mois)
             - création des centroides, modification des clusters, MinMaxscaler, KMeans pour ARI (différence entre les clusters X et X-1 ou -1 est le mois ou la semaine ou le trimestre précédent)
         - Etude de l'évolution des variables pertinantes mois/mois :
+          
+          ![Month](PhotosReadme/EvolutionMonth.png)
         - Etude de l'évolution des variables pertinantes semaines/semaines :
+          
+          ![Week](PhotosReadme/EvolutionWeek.png)
         - Evolution des clusters en semaine vs Août 2018 :
+          
+          ![Month](PhotosReadme/ARIAccWeek.png)
         - Evolution des clusters en mois vs Août 2018 :
+          
+          ![Month](PhotosReadme/ARIAccMonth.png)
         - Evolution des clusters en trimestre vs Août 2018 :
-        - Evolution des groupes en fonction du contrat de maintenance :   
+          
+          ![Month](PhotosReadme/ARIAccTrim.png)
+        - Evolution des groupes en fonction du contrat de maintenance :
+          
+          ![Maintenant](PhotosReadme/EvolutionGoodClient.png)   
   
