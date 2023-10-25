@@ -18,5 +18,5 @@
       - Création de nouvelles variables ou transposition des données (Dates diverses, différents types de paiements ...)
       - Divers graphiques
       - Etude de la géolocalisation des acheteurs et vendeurs et création d'une mesure de distance (Harvesine) :
-      - 
+      - Etude de l'assymétrie des données via **Skew** :
   
