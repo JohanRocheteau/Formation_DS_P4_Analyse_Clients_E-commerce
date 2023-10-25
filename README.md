@@ -2,7 +2,7 @@
 
 ## Mise en Situation :
 - **Entreprise :** Olist
-- **Logo :**
+- **Logo :** ![Logo](PhotosReadme/LogoP4.png)
 - **But :** Fournir à ses équipes d'e-commerce une segmentation des clients qu’elles pourront utiliser au quotidien pour leurs campagnes de communication.
 - **Jeux de données :** [Base de données](https://www.kaggle.com/olistbr/brazilian-ecommerce)
 - **Objectifs :**
@@ -16,7 +16,13 @@
     - **Exploration des données :**
       - Ouverture, analyse et merge des fichiers
       - Création de nouvelles variables ou transposition des données (Dates diverses, différents types de paiements ...)
-      - Divers graphiques
+      - Divers graphiques :
+        
+        ![Graph](PhotosReadme/Top10.png)
       - Etude de la géolocalisation des acheteurs et vendeurs et création d'une mesure de distance (Harvesine) :
+        
+        ![Vendeurs](PhotosReadme/Vendeurs.png)
       - Etude de l'assymétrie des données via **Skew** :
+        
+        ![Skew](PhotosReadme/Skew.png)
   
