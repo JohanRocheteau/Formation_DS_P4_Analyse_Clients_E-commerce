@@ -11,7 +11,7 @@
     - Fournir une proposition de contrat de maintenance basée sur une analyse de la stabilité des segments au cours du temps.
 
 ## Réalisations :
-- **Librairies principales :** Pandas, Seaborn, Datetime, Numpy, KNNImputer
+- **Librairies principales :** Pandas, Seaborn, Datetime, Numpy, KNNImputer, MinMaxScaler, StandardScaler
 - **Etapes réalisées :**
     - **Exploration des données :**
       - Ouverture, analyse et merge des fichiers
@@ -25,4 +25,15 @@
       - Etude de l'assymétrie des données via **Skew** :
         
         ![Skew](PhotosReadme/Skew.png)
+    - **Simulation de la maintenance des clusters :**
+        - **Création de définitions :**
+            - Toutes les étapes de nettoyage du notebook d'exploration en plusieurs définitions
+            - Extraction des données (semaines ou mois)
+            - création des centroides, modification des clusters, MinMaxscaler, KMeans pour ARI (différence entre les clusters X et X-1 ou -1 est le mois ou la semaine ou le trimestre précédent)
+        - Etude de l'évolution des variables pertinantes mois/mois :
+        - Etude de l'évolution des variables pertinantes semaines/semaines :
+        - Evolution des clusters en semaine vs Août 2018 :
+        - Evolution des clusters en mois vs Août 2018 :
+        - Evolution des clusters en trimestre vs Août 2018 :
+        - Evolution des groupes en fonction du contrat de maintenance :   
   
