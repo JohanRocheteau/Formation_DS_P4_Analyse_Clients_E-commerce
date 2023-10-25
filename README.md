@@ -29,8 +29,22 @@
         - Utilisation des variables RFM (Recence achat, Fréquence, Montant)
         - Différents tests d'ajout de variables supplémentaires et choix d'ajout du score client
         - Divers graphiques réalisés pour étayer l'analyse :
-           
+            - Cercle de corrélation pour la pertinance des variables :
+              
+              ![CercleCor](PhotosReadme/CercleCorr.png)
+            - Etude du Elbow pour choisir le nombre de clusters :
+         
+              ![Elbow](PhotosReadme/Elbow.png)
+            - Etude des clusters créés :
+              
+              ![Clusters](PhotosReadme/Clusters.png)
+            - Radar Chart pour comparer les groupes :
+         
+              ![Radar](PhotosReadme/Radar.png)
 
+            - Pairplot pour observer les différents clients en fonction des groupes :
+
+              ![Pairplot](PhotosReadme/Pairplot.png)
     - **Simulation de la maintenance des clusters :**
         - **Création de définitions :**
             - Toutes les étapes de nettoyage du notebook d'exploration en plusieurs définitions
