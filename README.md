@@ -25,6 +25,12 @@
       - Etude de l'assymétrie des données via **Skew** :
         
         ![Skew](PhotosReadme/Skew.png)
+    - **Mise au point des clusters :**
+        - Utilisation des variables RFM (Recence achat, Fréquence, Montant)
+        - Différents tests d'ajout de variables supplémentaires et choix d'ajout du score client
+        - Divers graphiques réalisés pour étayer l'analyse :
+           
+
     - **Simulation de la maintenance des clusters :**
         - **Création de définitions :**
             - Toutes les étapes de nettoyage du notebook d'exploration en plusieurs définitions
