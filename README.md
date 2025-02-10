@@ -9,7 +9,7 @@
 Fournir à l’équipe marketing d’Olist une segmentation des clients du site e-commerce pour optimiser les campagnes de communication.
 
 ### **📂 Jeux de données**
-- **Données :** Base de données (lien vers la base de données, s'il y en a un)
+- **Données :** [Base de données](https://www.kaggle.com/olistbr/brazilian-ecommerce)
 - **Objectifs du projet :**
   - Analyser les comportements des utilisateurs et leurs données personnelles.
   - Fournir une description actionable des segments créés et de leur logique sous-jacente.
@@ -22,7 +22,7 @@ Fournir à l’équipe marketing d’Olist une segmentation des clients du site 
 ### **1️⃣ Exploration des données**
 - **Ouverture des données :** Analyse et fusion des fichiers pour préparer les données.
 - **Création de nouvelles variables :** Transposition et dérivation de nouvelles variables telles que les types de paiement et les dates clés.
-
+  
 ### **2️⃣ Analyse exploratoire**
 - **Géolocalisation des acheteurs et des vendeurs :** Utilisation de la formule de **Harvesine** pour calculer la distance géographique.
   
@@ -57,20 +57,23 @@ Fournir à l’équipe marketing d’Olist une segmentation des clients du site 
 - **Analyse de l'évolution des variables pertinentes sur différentes périodes :**
   - **Mois/mois** : Suivi de l’évolution des variables clés mois après mois.
   
-    ![Month](PhotosReadme/ARIAccMonth.png)
+    ![Month](PhotosReadme/EvolutionMonth.png)
 
   - **Semaines/semaine** : Analyse de l'évolution des segments semaine par semaine.
   
-    ![Week](PhotosReadme/ARIAccWeek.png)
+    ![Week](PhotosReadme/EvolutionWeek.png)
 
   - **Evolution des clusters** : Étude de l’évolution des clusters entre août 2018 et les périodes suivantes (semaine, mois, trimestre).
   
+    ![Month](PhotosReadme/ARIAccWeek.png)
+  
+    ![Month](PhotosReadme/ARIAccMonth.png)
+
     ![Month](PhotosReadme/ARIAccTrim.png)
 
-### **5️⃣ Analyse et conclusion**
-- **Évolution des groupes** : En fonction du contrat de maintenance, analyse de la stabilité des clusters au fil du temps.
+  - **Evolution des groupes** : En fonction du contrat de maintenance, analyse de la stabilité des clusters au fil du temps.
   
-  ![Maintenant](PhotosReadme/Maintenant.png)
+    ![Maintenant](PhotosReadme/EvolutionGoodClient.png)
 
 ---
 
