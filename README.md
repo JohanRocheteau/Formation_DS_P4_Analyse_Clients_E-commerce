@@ -57,11 +57,11 @@ Fournir à l’équipe marketing d’Olist une segmentation des clients du site 
 - **Analyse de l'évolution des variables pertinentes sur différentes périodes :**
   - **Mois/mois** : Suivi de l’évolution des variables clés mois après mois.
   
-    ![Month](PhotosReadme/Month.png)
+    ![Month](PhotosReadme/ARIAccMonth.png)
 
   - **Semaines/semaine** : Analyse de l'évolution des segments semaine par semaine.
   
-    ![Week](PhotosReadme/Week.png)
+    ![Week](PhotosReadme/ARIAccWeek.png)
 
   - **Evolution des clusters** : Étude de l’évolution des clusters entre août 2018 et les périodes suivantes (semaine, mois, trimestre).
   
