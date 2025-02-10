@@ -37,7 +37,7 @@ Fournir à l’équipe marketing d’Olist une segmentation des clients du site 
 - **Test d’ajout de variables supplémentaires :** Intégration du score client et analyse de l'impact sur la segmentation.
 - **Visualisation de la corrélation entre les variables :** Utilisation du **cercle de corrélation** pour évaluer la pertinence des variables.
   
-  ![CercleCor](PhotosReadme/CercleCor.png)
+  ![CercleCor](PhotosReadme/CercleCorr.png)
 
 - **Choix du nombre de clusters :** Utilisation de la méthode **Elbow** pour déterminer le nombre optimal de clusters.
   
