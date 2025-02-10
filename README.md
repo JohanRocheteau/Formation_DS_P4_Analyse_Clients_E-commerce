@@ -65,7 +65,7 @@ Fournir à l’équipe marketing d’Olist une segmentation des clients du site 
 
   - **Evolution des clusters** : Étude de l’évolution des clusters entre août 2018 et les périodes suivantes (semaine, mois, trimestre).
   
-    ![Month](PhotosReadme/Month.png)
+    ![Month](PhotosReadme/ARIAccTrim.png)
 
 ### **5️⃣ Analyse et conclusion**
 - **Évolution des groupes** : En fonction du contrat de maintenance, analyse de la stabilité des clusters au fil du temps.
