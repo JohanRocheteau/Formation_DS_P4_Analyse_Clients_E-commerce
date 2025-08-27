@@ -1,104 +1,86 @@
-# 📊 Projet N°4 : Segmentation des clients d'un site e-commerce
+# Ecommerce-Customer-Segmentation-2023
 
-## **📌 Contexte et Objectif**
+![Illustration](PhotosReadme/LogoP4.png)
 
-**Entreprise :** Olist  
-**Logo :** ![Logo](PhotosReadme/LogoP4.png)
+Projet réalisé en 2023 dans le cadre de ma formation en Data Science.  
+Objectif : segmenter les clients d’un site e-commerce (Olist) pour aider l’équipe marketing à personnaliser les campagnes de communication et à suivre l’évolution des comportements dans le temps.
 
-### **🎯 Objectif**
-Fournir à l’équipe marketing d’Olist une segmentation des clients du site e-commerce pour optimiser les campagnes de communication.
+## Objectifs
 
-### **📂 Jeux de données**
-- **Données :** [Base de données](https://www.kaggle.com/olistbr/brazilian-ecommerce)
-- **Objectifs du projet :**
-  - Analyser les comportements des utilisateurs et leurs données personnelles.
-  - Fournir une description actionable des segments créés et de leur logique sous-jacente.
-  - Proposer un contrat de maintenance basé sur l'évolution des segments au fil du temps.
+- Analyser les comportements d’achat et données client
+- Créer une segmentation claire à l’aide de variables RFM
+- Étudier la stabilité des segments dans le temps
+- Proposer un contrat de maintenance adapté aux évolutions des clusters
 
----
+## Données
 
-## **🚀 Réalisations et Méthodologie**
+- **Source** : [Kaggle – Brazilian E-Commerce Public Dataset](https://www.kaggle.com/olistbr/brazilian-ecommerce)
 
-### **1️⃣ Exploration des données**
-- **Ouverture des données :** Analyse et fusion des fichiers pour préparer les données.
-- **Création de nouvelles variables :** Transposition et dérivation de nouvelles variables telles que les types de paiement et les dates clés.
-  
-### **2️⃣ Analyse exploratoire**
-- **Géolocalisation des acheteurs et des vendeurs :** Utilisation de la formule de **Harvesine** pour calculer la distance géographique.
-  
-  ![Vendeurs](PhotosReadme/Vendeurs.png)
+Les données comprennent :
+- Informations client
+- Commandes, paiements, livraisons
+- Produits, vendeurs et localisation
 
-- **Analyse de l’asymétrie des données :** Étude de la **Skew** pour comprendre la distribution des données.
+## Méthodologie
 
+### 1. Préparation des données
+
+- Fusion des différentes tables de la base Olist
+- Création de nouvelles variables : délais de livraison, distance client-vendeur (formule de Haversine), score client
+- Analyse des distributions (skew) et nettoyage des données  
+  ![Vendeurs](PhotosReadme/Vendeurs.png)  
   ![Skew](PhotosReadme/Skew.png)
 
-### **3️⃣ Mise au point des clusters**
-- **Variables utilisées pour la segmentation :** RFM (Récence achat, Fréquence, Montant)
-- **Test d’ajout de variables supplémentaires :** Intégration du score client et analyse de l'impact sur la segmentation.
-- **Visualisation de la corrélation entre les variables :** Utilisation du **cercle de corrélation** pour évaluer la pertinence des variables.
-  
-  ![CercleCor](PhotosReadme/CercleCorr.png)
+### 2. Segmentation des clients
 
-- **Choix du nombre de clusters :** Utilisation de la méthode **Elbow** pour déterminer le nombre optimal de clusters.
-  
+- Segmentation RFM (Récence, Fréquence, Montant)
+- Analyse de la corrélation entre variables  
+  ![Corrélation](PhotosReadme/CercleCorr.png)
+
+- Choix du nombre optimal de clusters via la méthode Elbow  
   ![Elbow](PhotosReadme/Elbow.png)
 
-- **Analyse des clusters créés :** Observation des groupes clients issus du clustering et création de **Radar Charts** pour comparer les différents segments.
-  
-  ![Radar](PhotosReadme/Radar.png)
+- Visualisation des segments :
+  - Radar chart
+  - Pairplot des groupes  
+  ![Radar](PhotosReadme/Radar.png)  
+  ![Pairplot](PhotosReadme/Pairplot.png)
 
-  - **Pairplot** : Analyse de la distribution des clients en fonction des différents groupes.
-  
-    ![Pairplot](PhotosReadme/Pairplot.png)
+### 3. Suivi des clusters dans le temps
 
-### **4️⃣ Simulation de la maintenance des clusters**
-- **Création des définitions :** Séparation des étapes de nettoyage et création des **centroïdes**. Simulation de l’évolution des clusters au fil du temps (semaines, mois, trimestres).
-  
-- **Analyse de l'évolution des variables pertinentes sur différentes périodes :**
-  - **Mois/mois** : Suivi de l’évolution des variables clés mois après mois.
-  
-    ![Month](PhotosReadme/EvolutionMonth.png)
+- Création des centroïdes initiaux
+- Simulation de l’évolution des segments sur plusieurs périodes :
+  - Semaine
+  - Mois
+  - Trimestre
 
-  - **Semaines/semaine** : Analyse de l'évolution des segments semaine par semaine.
-  
-    ![Week](PhotosReadme/EvolutionWeek.png)
+  ![Month](PhotosReadme/EvolutionMonth.png)  
+  ![Week](PhotosReadme/EvolutionWeek.png)  
+  ![ARI Week](PhotosReadme/ARIAccWeek.png)  
+  ![ARI Month](PhotosReadme/ARIAccMonth.png)  
+  ![ARI Trim](PhotosReadme/ARIAccTrim.png)
 
-  - **Evolution des clusters** : Étude de l’évolution des clusters entre août 2018 et les périodes suivantes (semaine, mois, trimestre).
-  
-    ![Month](PhotosReadme/ARIAccWeek.png)
-  
-    ![Month](PhotosReadme/ARIAccMonth.png)
+- Suivi de l’évolution des segments clients par score :
+  ![Clients](PhotosReadme/EvolutionGoodClient.png)
 
-    ![Month](PhotosReadme/ARIAccTrim.png)
+## Résultats
 
-  - **Evolution des groupes** : En fonction du contrat de maintenance, analyse de la stabilité des clusters au fil du temps.
-  
-    ![Maintenant](PhotosReadme/EvolutionGoodClient.png)
+- Segmentation cohérente, utile pour des actions marketing ciblées
+- Les clusters sont relativement stables dans le temps
+- Le score client permet d’affiner les stratégies d’activation et de fidélisation
+- Un suivi régulier permettrait d’adapter les campagnes selon les évolutions comportementales
 
----
+## Technologies utilisées
 
-## **📈 Résultats et Insights**
+- **Langage** : Python
+- **Librairies** : pandas, numpy, matplotlib, seaborn, scikit-learn, KMeans, KNNImputer
+- **Environnement** : Jupyter Notebook
+- **Méthodes** : Clustering, Data cleaning, Data visualization, Feature engineering
 
-### **🔎 Conclusions :**
-- La segmentation permet de mieux cibler les clients et d’optimiser les campagnes marketing.
-- Les clusters identifiés sont stables au fil du temps et peuvent être utilisés pour des prévisions futures.
-- Le score client est un indicateur clé qui améliore la qualité des segments.
+## Contact
 
----
+Projet réalisé en 2023 dans le cadre de ma formation en Data Science.  
+Pour toute remarque ou question :
 
-## **🛠️ Technologies et Outils Utilisés**
-
-- **Langage :** Python 🐍
-- **Librairies :** Pandas, Numpy, Seaborn, Matplotlib, KMeans, KNNImputer, Scikit-learn
-- **Environnement :** Jupyter Notebook
-- **Méthodes utilisées :** Clustering, Data cleaning, Data visualization, Machine learning
-
----
-
-## **📬 Contact et Feedback**
-
-💡 Ce projet a été réalisé dans le cadre de ma **formation Data Science**. N’hésitez pas à **laisser vos suggestions** ou à **me contacter** pour en discuter !  
-
-📩 **Contact :**  
-📧 [johan.rocheteau@hotmail.fr](mailto:johan.rocheteau@hotmail.fr)  
-🔗 [LinkedIn](https://www.linkedin.com/in/johan-rocheteau)
+- **Email** : [johan.rocheteau@hotmail.fr](mailto:johan.rocheteau@hotmail.fr)  
+- **LinkedIn** : [linkedin.com/in/johan-rocheteau](https://www.linkedin.com/in/johan-rocheteau)
